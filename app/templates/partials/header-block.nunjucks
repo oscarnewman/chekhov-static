@@ -1,0 +1,11 @@
+<header class="header-block">
+
+  {%include 'partials/nav-bar.nunjucks' %}
+
+  <h1 class="title">Prom 2017</h1>
+  <div class="icon-list">
+    <p class="item"><i class="icon fa fa-calendar-o"></i>June 13</p>
+    <p class="item"><i class="icon fa fa-map-marker"></i>The Renaissance</p>
+    <p class="item"><i class="icon fa fa-users"></i>513 Guests</p>
+  </div>
+</header>

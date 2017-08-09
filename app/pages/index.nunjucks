@@ -1,0 +1,12 @@
+{% extends 'app.nunjucks' %}
+
+{% block content %}
+
+<div class="oneCol">
+
+{% include 'partials/header-block.nunjucks' %}
+
+{% include 'partials/guest-list.nunjucks' %}
+
+</div>
+{% endblock content %}

@@ -1,0 +1,46 @@
+{% macro cell(checked, name="Pontius Pilate", date="Fri, Jan 24", id="174") %}
+<div class="guest-cell {% if checked%}-checked{% endif %}" >
+  <section class="summary">
+    <div class="left">
+      <div class="checkbox"></div>
+      <div class="text">
+        <p class="title">{{ name }}</p>
+        <p class="subtitle">Purchased <strong>{{ date }}</strong></p>
+      </div>
+    </div>
+    <div class="right">
+      <p class="detail">{{ id }}</p>
+      <a href="#" class="toggle">
+        <span class="closed"><i class="fa fa-angle-down"></i> Details</span>
+        <span class="open"><i class="fa fa-angle-up"></i> Close</span>
+      </a>
+    </div>
+  </section>
+  <section class="details-preview">
+    <div class="guest-fields">
+      <div class="kv-group">
+        <p class="key">Ticket Price</p>
+        <p class="value">$50</p>
+      </div>
+      <div class="kv-group">
+        <p class="key">School</p>
+        <p class="value">LASA</p>
+      </div>
+      <div class="kv-group">
+        <p class="key">Bought</p>
+        <p class="value">Online</p>
+      </div>
+      <div class="kv-group">
+        <p class="key">Contact</p>
+        <p class="value">whoops@hotmail.com</p>
+      </div>
+
+
+    </div>
+    <div class="buttons">
+      <button class="check-in">Check In</button>
+      <button class="delete">Edit</button>
+    </div>
+  </section>
+</div>
+{% endmacro %}

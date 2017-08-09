@@ -1,0 +1,43 @@
+.list-cell
+  +clearfix
+  padding: 15px 0
+  border-bottom: solid 1px $border-color
+  color: $text-color-light
+
+  &.-checked
+    .left, .detail, .subdetail
+      opacity: .5
+
+
+  .title
+    font-size: ms(1)
+    font-weight: 300
+    color: $text-color
+    margin: 0
+    display: block
+
+  .subtitle
+    font-size: ms(-1)
+    margin: 0
+    display: block
+
+    strong
+      font-weight: 600
+
+
+  .detail
+    margin: 0
+    font-size: +ms(1)
+    font-weight: 300
+
+  .subdetail
+    font-size: ms(-1)
+    margin: 0
+
+
+  .right
+    text-align: right
+    float: right
+
+  .left
+    float: left

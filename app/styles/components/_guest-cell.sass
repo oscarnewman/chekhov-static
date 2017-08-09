@@ -1,0 +1,59 @@
+.guest-cell
+  @extend .list-cell
+
+  $checkbox-size: ms(1) * 1.9
+  $checkbox-margin: .7em
+
+  user-select: none
+  cursor: pointer
+
+  .details-preview
+    display: none
+
+  .toggle
+    font-size: ms(-1)
+    font-weight: 700
+
+    .open
+      display: none
+
+  .summary
+    +clearfix
+
+  .left
+    +clearfix
+
+  .text
+    float: left
+
+  .checkbox
+    $checkbox-size: ms(1) * 1.9
+    float: left
+    width: $checkbox-size
+    height: $checkbox-size
+
+    border: solid 1px $primary-color
+    border-radius: 100%
+
+    margin: auto
+    margin-right: $checkbox-margin
+
+  .details-preview
+    padding-left: $checkbox-size + $checkbox-margin
+    margin: $checkbox-margin 0
+
+  &.-checked .checkbox
+    background-color: $primary-color
+
+  &.-open .details-preview
+    display: block
+
+  &.-open
+    cursor: default
+    user-select: text
+
+  &.-open .toggle .open
+    display: inline
+
+  &.-open .toggle .closed
+    display: none

@@ -1,0 +1,21 @@
+.button,
+.button-block
+  color: transparentize($text-color, .25)
+  background: #f0f0f0
+  border-radius: 2px
+  font-size: ms(0)
+  font-weight: 700
+  padding: .5em 2em
+
+  &.-small
+    font-size: ms(-1)
+
+  &.-primary
+    background: $primary-color
+    color: white
+    border: none
+
+  &.-error
+    background: $accent-color
+    color: white
+    border: none

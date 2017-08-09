@@ -1,0 +1,17 @@
+.details-preview
+  .guest-fields
+    margin-bottom: .4em
+
+  .buttons
+    +grid-collapse
+
+  .close, .check-in, .delete
+    +grid-column(6)
+    @extend .button-block
+    @extend .-small
+
+  .check-in
+    @extend .-primary
+
+  .delete
+    @extend .-error
