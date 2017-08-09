@@ -5,7 +5,7 @@
   },
   "scripts": {
     "start": "gulp serve",
-    "deploy": "run(){ gulp build && git add -A && git commit -m $1 && git push; }; run",
+    "deploy": "run(){ gulp build && git add -A && git commit -m '$1' && git push origin master && firebase deploy; }; run",
     "test": "gulp test",
     "lint:css": "stylelint app/styles/**/*"
   },
