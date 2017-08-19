@@ -1,0 +1,15 @@
+<main class="float-box">
+  <h2 class="title">Events</h2>
+  <div class="filter-list">
+    <a href="#" class="-active">All</a>
+    <a href="#">Upcoming</a>
+    <a href="#">Past</a>
+  </div>
+
+  {% import 'partials/event-cell.nunjucks' as event %}
+
+  {% for e in events %}
+    {{ event.cell(e.name, e.date, e.time, e.shared, e.guests) }}
+  {% endfor %}
+
+</main>

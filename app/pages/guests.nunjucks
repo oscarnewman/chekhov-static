@@ -1,0 +1,18 @@
+{% extends 'app.nunjucks' %}
+
+{% block content %}
+
+<div class="twoCol">
+
+  {% import 'partials/header-block.nunjucks' as header %}
+  {{ header.block("Prom 2017", true)}}
+
+  <div class="grid-wrap">
+    <div class="contain">
+      {% include 'partials/guest-list-compact.nunjucks' %}
+      {% include 'partials/guest-details.nunjucks' %}
+    </div>
+  </div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,17 @@
+.twoCol
+
+    .grid-wrap
+        +grid-collapse
+
+    .contain
+        +clearfix
+
+    .float-box
+        +grid-column(4)
+        margin-top: -$overhang-height
+
+    .section-right
+      +grid-column(8)
+      margin-top: - (ms(0) + .5em)
+
+    @extend ._bottomPad

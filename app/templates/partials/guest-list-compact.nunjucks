@@ -1,0 +1,16 @@
+<main class="float-box">
+  <h2 class="title">Guests</h2>
+  <div class="filter-list">
+    <a href="#" class="-active">All</a>
+    <a href="#">Entered</a>
+    <a href="#">Not Entered</a>
+  </div>
+  <input class="search-bar -small" type="text" placeholder="search">
+
+  {% import 'partials/guest-cell-compact.nunjucks' as guest %}
+
+  {% for g in guests %}
+    {{ guest.cell((g.entered), g.name, id=g.id) }}
+  {% endfor %}
+
+</main>

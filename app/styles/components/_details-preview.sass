@@ -5,7 +5,11 @@
   .buttons
     +grid-collapse
 
-  .close, .check-in, .delete
+  &.-large
+    .close, .check-in, .delete, .edit
+      +grid-column(4)
+
+  .close, .check-in, .delete, .edit
     +grid-column(6)
     @extend .button-block
     @extend .-small
@@ -15,3 +19,6 @@
 
   .delete
     @extend .-error
+
+  .edit
+    @extend .-hollow

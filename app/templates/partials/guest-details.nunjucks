@@ -1,0 +1,43 @@
+<div class="guest-details section-right">
+
+<section class="icon-list -light -large">
+  <a class="item" href="#"><i class="fa fa-plus"></i> New Guest</a>
+  <a class="item" href="#"><i class="fa fa-file-text-o"></i> Import Guests</a>
+  <a class="item -cta" href="#">Open Check In</a>
+</section>
+
+<section class="top">
+  <h3 class="name">Pontius Pilate</h3>
+  <p class="id">174</p>
+</section>
+
+<p class="date">Purchased <span class="value">Fri, Jan 14</span></p>
+
+<section class="details-preview -large">
+  <div class="guest-fields">
+    <div class="kv-group">
+      <p class="key">Ticket Price</p>
+      <p class="value">$50</p>
+    </div>
+    <div class="kv-group">
+      <p class="key">School</p>
+      <p class="value">LASA</p>
+    </div>
+    <div class="kv-group">
+      <p class="key">Bought</p>
+      <p class="value">Online</p>
+    </div>
+    <div class="kv-group">
+      <p class="key">Contact</p>
+      <p class="value">whoops@hotmail.com</p>
+    </div>
+
+
+  </div>
+  <div class="buttons">
+    <button class="edit">Edit</button>
+    <button class="check-in">Check In</button>
+    <button class="delete">Delete</button>
+  </div>
+</section>
+</div>

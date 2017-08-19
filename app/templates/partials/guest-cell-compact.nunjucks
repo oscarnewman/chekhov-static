@@ -1,0 +1,11 @@
+{% macro cell(checked, name="Pontius Pilate", date="Fri, Jan 24", id="174") %}
+<div class="list-cell -compact {% if checked%}-checked{% endif %}" >
+  <div class="left">
+    <div class="checkbox"></div>
+    <p class="title">{{ name }}</p>
+  </div>
+  <div class="right">
+    <p class="detail">{{ id }}</p>
+  </div>
+</div>
+{% endmacro %}

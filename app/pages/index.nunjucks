@@ -4,9 +4,10 @@
 
 <div class="oneCol">
 
-{% include 'partials/header-block.nunjucks' %}
+  {% import 'partials/header-block.nunjucks' as header %}
+  {{ header.block("Events", false)}}
 
-{% include 'partials/guest-list.nunjucks' %}
+{% include 'partials/event-list.nunjucks' %}
 
 </div>
 {% endblock content %}

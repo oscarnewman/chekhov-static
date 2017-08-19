@@ -1,4 +1,27 @@
 {
+  "events": [
+    {
+      "name": "Prom",
+      "date": "Saturday, April 10",
+      "time": "8pm",
+      "guests": "615",
+      "shared": 5
+    },
+    {
+      "name": "Spring Banquet",
+      "date": "Friday, March 2",
+      "time": "6pm",
+      "guests": "43",
+      "shared": 0
+    },
+    {
+      "name": "Homecoming",
+      "date": "Saturday, October 22",
+      "time": "8pm",
+      "guests": "425",
+      "shared": 15
+    }
+  ],
   "guests": [
   {
     "entered": false,

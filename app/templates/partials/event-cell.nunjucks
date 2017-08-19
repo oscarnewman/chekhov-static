@@ -1,0 +1,14 @@
+{% macro cell(name="Prom", date="Fri, Jan 24", time="8pm", shared=5, guests="174") %}
+<div class="event-cell {% if checked%}-checked{% endif %}" >
+  <div class="left">
+    <div class="text">
+      <p class="title">{{ name }}</p>
+      <p class="subtitle"><strong>{{ date }}</strong> at <strong>{{ time }}</strong></p>
+    </div>
+  </div>
+  <div class="right">
+    <p class="detail">{{ guests }} guests</p>
+    <p class="subdetail">{% if shared == 0 %}Private{% else %}Shared with {{ shared }} people{% endif %}</p>
+  </div>
+</div>
+{% endmacro %}

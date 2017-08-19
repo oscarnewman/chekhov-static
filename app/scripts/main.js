@@ -5,6 +5,10 @@ $(document).ready(function () {
     return false;
   });
 
+  $('.event-cell').click(function () {
+    window.location.href = '/event.html';
+  });
+
   $('.toggle').click(function () {
     var $cell = $(this).closest('.guest-cell');
     $cell.toggleClass('-open');
